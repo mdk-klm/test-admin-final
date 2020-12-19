@@ -15,7 +15,7 @@ import MemeFilter from "./MemeFilter";
 
 const MemeList = (props) => {
   return (
-    <List {...props} filters={<MemeFilter />}>
+    <List {...props} filters={<MemeFilter />} exporter={false}>
       <Datagrid rowClick={"show"}>
         <TextField source="id" />
         <TextField source="name" />
