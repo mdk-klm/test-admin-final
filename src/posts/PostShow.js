@@ -20,7 +20,6 @@ const PostShowActions = ({ basePath, data }) => (
   <CardActions>
     <ListButton basePath={basePath} />
     <RefreshButton />
-    <AddNewCommentButton record={data} />
   </CardActions>
 );
 
@@ -50,7 +49,6 @@ export const PostShow = (props) => (
             <ShowButton />
           </Datagrid>
         </ReferenceManyField>
-        <AddNewCommentButton />
       </Tab>
     </TabbedShowLayout>
   </Show>
