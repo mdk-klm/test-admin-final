@@ -11,10 +11,8 @@ import {
   ShowButton,
   Tab,
   TabbedShowLayout,
-  TextField
+  TextField,
 } from "react-admin";
-import AddNewCommentButton from "./AddNewCommentButton";
-
 
 const PostShowActions = ({ basePath, data }) => (
   <CardActions>
@@ -32,9 +30,7 @@ export const PostShow = (props) => (
         <TextField source="teaser" />
       </Tab>
       <Tab label="Body" path="body">
-        <RichTextField
-          source="body"
-        />
+        <RichTextField source="body" />
       </Tab>
       <Tab label="Comments" path="comments">
         <ReferenceManyField

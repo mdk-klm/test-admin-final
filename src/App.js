@@ -13,6 +13,9 @@ import { MemeShow } from "./memes/MemeShow";
 import { PostCreate, PostEdit, PostList } from "./posts/posts";
 import { PostShow } from "./posts/PostShow";
 import { theme } from "./theme";
+import  ColorList from './colors/ColorList';
+import { ColorShow } from "./colors/ColorShow";
+
 
 const disableFakeFetchRequestsLogs = true;
 const App = () => (
@@ -21,6 +24,7 @@ const App = () => (
     dashboard={Dashboard}
     theme={theme}
     authProvider={authProvider}
+    
   >
     <Resource
       name="posts"
@@ -38,6 +42,10 @@ const App = () => (
       edit={MemeEdit}
     />
     <Resource name="tags" list={TagList} />
+    <Resource name="colors" 
+    list={ColorList}
+    show={ColorShow}/>
+    
   </Admin>
 );
 

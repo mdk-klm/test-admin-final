@@ -79,5 +79,12 @@ isDead : false
         "id":3,
         "name":'rofl'
       }
-    ]
+    ],
+
+    colors: [
+    {
+      id :1,
+      name :'purple'
+    }
+  ]
   }
