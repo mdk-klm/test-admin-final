@@ -11,14 +11,17 @@ import {
   SingleFieldList,
   TextField,
 } from "react-admin";
+import { makeStyles } from '@material-ui/core/styles';
 import MemeFilter from "./MemeFilter";
+import classnames from 'classnames';
+
 
 const MemeList = (props) => {
   return (
     <List {...props} filters={<MemeFilter />} exporter={false}>
       <Datagrid rowClick={"show"}>
         <TextField source="id" />
-        <TextField source="name" />
+        <TextField source="name"color={"primary"} />
         <TextField source="bottomText" />
         <ImageField source="image" />
         <TextField source="rank" />
@@ -33,6 +36,7 @@ const MemeList = (props) => {
           </SingleFieldList>
         </ReferenceArrayField>
         <BooleanField source="isDead" />
+        <TextField source="color"/>
         <ShowButton />
         <EditButton />
       </Datagrid>

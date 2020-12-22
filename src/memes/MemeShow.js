@@ -7,6 +7,8 @@ import {
   TextField,
 } from "react-admin";
 
+
+
 export const MemeShow = (props) => (
   <Show {...props}>
     <TabbedShowLayout>
@@ -16,6 +18,7 @@ export const MemeShow = (props) => (
       </Tab>
       <Tab label="status">
         <BooleanField source="isDead" />
+        <TextField source="color"/>
       </Tab>
       <Tab label="Description">
         <TextField source="description" />

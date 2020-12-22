@@ -34,7 +34,9 @@ export default {
       name:"Grumpy Cat",
       rank:10,
       description:"Tardar Sauce, Tabatha Bundesen, Felis domesticus",
-      isDead: true
+      isDead: true,
+      color:'#000000',
+
       },
       {
         ID:7,
@@ -44,7 +46,8 @@ export default {
       name:"Brace Yourselves",
     rank:20,
     description:"Winter is Coming, Ned Stark, Sean Bean, Game of Thrones, GOT, Imminent Ned",
-    isDead: true
+    isDead: true,
+    color : '#DF0101'
   },
   {
     id:	5,
@@ -54,7 +57,8 @@ name:	"One Does Not Simply",
 rank:	40,
 description:	"One Does Not Simply Walk Into Mordor, Boromir, Sean Bean, Ned Stark, LOTR, Lord of the rings, One Ring",
 topText	:"One does not simply",
-isDead : false
+isDead : false,
+color : '#7401DF'
   },
   {
   id:	8,
@@ -63,7 +67,8 @@ isDead : false
   name	:"Success Kid",
   rank	:80,
   description:	"I hate sandcastles, eating sand",
-  isDead : false
+  isDead : false,
+  color : '#2ECCFA'
   }
     ],
     tags: [
@@ -86,5 +91,6 @@ isDead : false
       id :1,
       name :'purple'
     }
+    
   ]
   }
